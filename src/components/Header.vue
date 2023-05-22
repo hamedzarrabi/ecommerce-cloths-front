@@ -71,8 +71,8 @@
 <ul ref="headerMenu" v-if="navLogin"
   class="hidden md:flex justify-center space-x-6 text-xl  font-normal bg-white top-0 left-0 z-10  right-0 py-2 fixed rounded-sm"
 >
-  <router-link to="" class="hover:text-[#81C2BE] transition duration-300"><li>Home</li></router-link>
-  <router-link to="" class="hover:text-[#81C2BE] transition duration-300"><li>Shop</li></router-link>
+  <router-link to="/" class="hover:text-[#81C2BE] transition duration-300"><li>Home</li></router-link>
+  <router-link to="/shop" class="hover:text-[#81C2BE] transition duration-300"><li>Shop</li></router-link>
   <router-link to="" class="hover:text-[#81C2BE] transition duration-300"><li>About</li></router-link>
   <router-link to="" class="hover:text-[#81C2BE] transition duration-300"><li>Blog</li></router-link>
   <router-link to="" class="hover:text-[#81C2BE] transition duration-300"><li>Contact</li></router-link>
@@ -110,7 +110,7 @@
           </button>
         </div>
 
-        <router-link to="" class="hover:text-[#81C2BE] transition duration-300"><li>Home</li></router-link>
+        <router-link to="/" class="hover:text-[#81C2BE] transition duration-300"><li>Home</li></router-link>
         <router-link to="" class="hover:text-[#81C2BE] transition duration-300"><li>Shop</li></router-link>
         <router-link to="" class="hover:text-[#81C2BE] transition duration-300"><li>About</li></router-link>
         <router-link to="" class="hover:text-[#81C2BE] transition duration-300"><li>Blog</li></router-link>
