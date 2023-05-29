@@ -11,6 +11,10 @@ import { fab } from '@fortawesome/free-brands-svg-icons';
 import { far } from '@fortawesome/free-regular-svg-icons';
 
 import { dom } from "@fortawesome/fontawesome-svg-core";
+// import Toasted from 'vue-toasted';
+import Toast, { PluginOptions } from "vue-toastification";
+import 'vue-toastification/dist/index.css';
+
 
 
 import { library } from "@fortawesome/fontawesome-svg-core";
@@ -32,5 +36,6 @@ dom.watch();
 createApp(App)
 .use(store)
 .use(router)
+.use(Toast)
 .component("font-awesome-icon", FontAwesomeIcon)
 .mount('#app')

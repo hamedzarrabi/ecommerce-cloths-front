@@ -38,5 +38,24 @@ export default {
     Header,
     Footer
   },
+  created() {
+    // دریافت اطلاعات کاربر از sessionStorage و قرار دادن آن در state
+    const userId = localStorage.getItem('userId');
+    const email = localStorage.getItem('email');
+    const roles = localStorage.getItem('roles');
+    const name = localStorage.getItem('name');
+    const phoneNumber = localStorage.getItem('phoneNumber');
+    const isLoggedIn = localStorage.getItem('isLoggedIn');
+
+    if (userId && email && roles && name && phoneNumber) {
+      this.$store.commit('setUser', {
+        id: userId,
+        email: email,
+        name: name,
+        phoneNumber: phoneNumber,
+        roles: roles,
+      });
+    }
+  }
 }
 </script>
