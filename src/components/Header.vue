@@ -78,22 +78,13 @@
       <ul ref="headerMenu"
           class="hidden md:flex justify-center space-x-6 text-xl  font-normal bg-white top-0 left-0 z-10  right-0 py-2 fixed rounded-sm"
       >
-        <router-link to="/" class="hover:text-[#81C2BE] transition duration-300">
-          <li>Home</li>
-        </router-link>
-        <router-link to="/shop" class="hover:text-[#81C2BE] transition duration-300">
-          <li>Shop</li>
-        </router-link>
-        <router-link to="" class="hover:text-[#81C2BE] transition duration-300">
-          <li>About</li>
-        </router-link>
-        <router-link to="" class="hover:text-[#81C2BE] transition duration-300">
-          <li>Blog</li>
-        </router-link>
-        <router-link to="" class="hover:text-[#81C2BE] transition duration-300">
-          <li>Contact</li>
-        </router-link>
+        <div v-for="menu in menuItem" :key="menu.text">
+          <router-link :to="menu.url" class="hover:text-[#81C2BE] transition duration-300">
+            <li>{{ menu.text }}</li>
+          </router-link>
+        </div>
       </ul>
+
     </header>
 
     <!-- Modal -->
@@ -127,21 +118,15 @@
           </button>
         </div>
 
-        <router-link to="/" class="hover:text-[#81C2BE] transition duration-300">
-          <li>Home</li>
-        </router-link>
-        <router-link to="" class="hover:text-[#81C2BE] transition duration-300">
-          <li>Shop</li>
-        </router-link>
-        <router-link to="" class="hover:text-[#81C2BE] transition duration-300">
-          <li>About</li>
-        </router-link>
-        <router-link to="" class="hover:text-[#81C2BE] transition duration-300">
-          <li>Blog</li>
-        </router-link>
-        <router-link to="" class="hover:text-[#81C2BE] transition duration-300">
-          <li>Contact</li>
-        </router-link>
+
+        <!-- SM Menu -->
+        <div v-for="menu in menuItem" :key="menu.text">
+          <router-link :to="menu.url" class="hover:text-[#81C2BE] transition duration-300">
+            <li>{{ menu.text }}</li>
+          </router-link>
+        </div>
+
+
       </ul>
       <div class="space-x-10 mt-6 bg-gray-100 p-6">
         <button class="header-action-btn">
@@ -173,7 +158,14 @@ export default {
   data() {
     return {
       modalMenu: false,
-      splitNameUser: ''
+      splitNameUser: '',
+      menuItem: [
+        {text: "Home", url: '/'},
+        {text: "Shop", url: '/shop'},
+        {text: "About", url: '/about'},
+        {text: "Blog", url: '/blog'},
+        {text: "Contact", url: '/contact'},
+      ]
     };
   },
   methods: {

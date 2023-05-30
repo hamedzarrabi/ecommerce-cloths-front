@@ -233,6 +233,8 @@ export default {
         return this.$router.push("/login");
       }
     },
+
+
     async registerUser(values) {
       // console.log(JSON.stringify(values, null, 2));
 
@@ -295,7 +297,6 @@ export default {
       if (!value) {
         return 'This field is required';
       }
-      const min = 5;
       const regex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/i;
       if (!regex.test(value)) {
         return 'This field must be a valid password';
