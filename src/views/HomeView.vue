@@ -17,11 +17,11 @@
         >
           Fashion House
         </p>
-        <button
-          class="capitalize px-10 justify-start flex mt-8 py-4 bg-gray-900 text-white rounded-md ml-10 hover:bg-white hover:text-black transition duration-200"
+        <router-link to="/shop"
+          class="capitalize px-10 w-[155px] justify-start flex mt-8 py-4 bg-gray-900 text-white rounded-md ml-10 hover:bg-white hover:text-black transition duration-200"
         >
           shop now
-        </button>
+        </router-link>
       </div>
     </div>
   </div>

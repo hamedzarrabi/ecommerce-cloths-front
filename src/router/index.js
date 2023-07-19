@@ -6,6 +6,10 @@ import Shop from '@/views/ShopView.vue'
 import AboutView from "@/views/AboutView.vue";
 import ContactView from "@/views/ContactView.vue";
 import BlogView from "@/views/BlogView.vue";
+import PanelAdmin from "@/views/PanelAdmin.vue";
+import AddEditBlog from "@/shared/Modal/AddBlog.vue";
+import PageNotFound from "@/views/PageNotFound.vue";
+import EditBlog from "@/shared/Modal/EditBlog.vue";
 
 const routes = [
   {
@@ -43,6 +47,26 @@ const routes = [
     name: 'Blog',
     component: BlogView
   },
+  {
+    path: '/admin',
+    name: 'panelAdmin',
+    component: PanelAdmin
+  },
+  {
+    path: '/blog/addBlog',
+    name: 'addEditBlog',
+    component: AddEditBlog
+  },
+  {
+    path: '/blog/editBlog/:id',
+    name: 'editBlog',
+    component: EditBlog
+  },
+  {
+    path: '/:patchMatch(.*)*',
+    name: 'PageNotFound',
+    component: PageNotFound
+  }
 
 
 ]

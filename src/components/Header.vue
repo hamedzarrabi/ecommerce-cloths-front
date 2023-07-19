@@ -32,7 +32,7 @@
 
           <div class="hidden md:flex space-x-10 items-center mt-2">
 
-            <div class="hover:text-[#81C2BE]">
+            <div class="hover:text-greenHamed">
               <button class="header-action-btn" @click="login" v-if="!this.isLoggedIn">
                 <i class="fa-regular fa-user"></i> <br/>
                 Sign in
@@ -43,7 +43,7 @@
               </button>
             </div>
 
-            <div class="hover:text-[#81C2BE]">
+            <div class="hover:text-greenHamed">
               <button class="relative header-action-btn ">
                 <i class="fa-solid fa-cart-shopping"></i> <br/>
                 Cart
@@ -55,7 +55,7 @@
               <button class="relative header-action-btn">
                 <i class="fa-regular fa-heart"></i> <br/>
                 Wishlist
-                <div class="absolute -top-2 ml-6 -mt-2 -mr-1 text-white px-2 bg-[#81C2BE] rounded-full">100</div>
+                <div class="absolute -top-2 ml-6 -mt-2 -mr-1 text-white px-2 bg-greenHamed rounded-full">100</div>
               </button>
             </div>
           </div>
@@ -79,7 +79,7 @@
           class="hidden md:flex justify-center space-x-6 text-xl  font-normal bg-white top-0 left-0 z-10  right-0 py-2 fixed rounded-sm"
       >
         <div v-for="menu in menuItem" :key="menu.text">
-          <router-link :to="menu.url" class="hover:text-[#81C2BE] transition duration-300">
+          <router-link :to="menu.url" class="hover:text-greenHamed transition duration-300">
             <li>{{ menu.text }}</li>
           </router-link>
         </div>
@@ -121,7 +121,7 @@
 
         <!-- SM Menu -->
         <div v-for="menu in menuItem" :key="menu.text">
-          <router-link :to="menu.url" class="hover:text-[#81C2BE] transition duration-300">
+          <router-link :to="menu.url" class="hover:text-greenHamed transition duration-300">
             <li>{{ menu.text }}</li>
           </router-link>
         </div>

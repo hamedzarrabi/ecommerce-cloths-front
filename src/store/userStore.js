@@ -1,6 +1,5 @@
 import {UserService} from '@/service/UserService';
-import {createStore} from 'vuex'
-import {data} from "autoprefixer";
+import {createStore} from 'vuex';
 
 export default createStore({
     state: {

@@ -18,17 +18,17 @@ export default {
         img: {
             type: String,
             required: true,
-            defualt: "/images/blog-3.jpg"
+            default: "/images/blog-3.jpg"
         },
         title: {
             type: String,
             required: true,
-            defualt: "Cutter & Buck Virtue Eco Pique Recycled Womens Polo"
+            default: "Cutter & Buck Virtue Eco Pique Recycled Women's Polo"
         },
         price: {
             type: Number,
             required: true,
-            defualt: 44
+            default: 44
         }
     },
     data() {

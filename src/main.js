@@ -1,27 +1,24 @@
-import { createApp } from 'vue'
+import {createApp} from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store/userStore'
 import './assets/tailwind.css'
-import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
-import { fas } from '@fortawesome/free-solid-svg-icons'
+import {FontAwesomeIcon} from "@fortawesome/vue-fontawesome";
+import {fas} from '@fortawesome/free-solid-svg-icons'
 
-import { fab } from '@fortawesome/free-brands-svg-icons';
+import {fab} from '@fortawesome/free-brands-svg-icons';
 
-import { far } from '@fortawesome/free-regular-svg-icons';
+import {far} from '@fortawesome/free-regular-svg-icons';
 
-import { dom } from "@fortawesome/fontawesome-svg-core";
+import {dom} from "@fortawesome/fontawesome-svg-core";
 // import Toasted from 'vue-toasted';
-import Toast, { PluginOptions } from "vue-toastification";
+import Toast, {PluginOptions} from "vue-toastification";
 import 'vue-toastification/dist/index.css';
-
-
-
-import { library } from "@fortawesome/fontawesome-svg-core";
+import {library} from "@fortawesome/fontawesome-svg-core";
 import {
-  faSearch,
-  faAngleUp,
-  faAngleDown,
+    faSearch,
+    faAngleUp,
+    faAngleDown,
 } from "@fortawesome/free-solid-svg-icons";
 
 
@@ -34,8 +31,8 @@ library.add(far);
 dom.watch();
 
 createApp(App)
-.use(store)
-.use(router)
-.use(Toast)
-.component("font-awesome-icon", FontAwesomeIcon)
-.mount('#app')
+    .use(store)
+    .use(router)
+    .use(Toast)
+    .component("font-awesome-icon", FontAwesomeIcon)
+    .mount('#app')

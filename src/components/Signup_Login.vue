@@ -192,7 +192,6 @@ export default {
   },
   data() {
     return {
-      min: 5,
       change: false,
 
       // Login
